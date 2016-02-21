@@ -1,0 +1,24 @@
+[user]
+	name = Gianluca
+	email = gl051@biccari.com
+[core]
+	excludesfile = /Users/Gianluca/.gitignore_global
+	editor = atom
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
+[gui]
+	recentrepo = /Users/Gianluca/Coding/GitHub/LearningGit
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[alias]
+	undo = reset --soft HEAD^ 		# undo a commit
+	last = log -1 HEAD
+	lol = log --oneline --graph
