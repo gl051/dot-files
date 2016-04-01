@@ -17,9 +17,9 @@ alias ls='/bin/ls -p';
 
 # Aliases
 alias lsdot='ls -a | grep "^\."'     # List only hidden files or directory
-alias lsdir='ls -p | grep "/$"'      # Only list directories
-alias lsfile='ls -1 | grep -v "/$"'  # Only list files
-alias lssize='ls -hlFS'              # List with file size
+alias lsdir='ls -p | grep "/$"'      # Only list directories name
+alias lsfile='ls -1 | grep -v "/$"'  # Only list files name
+alias lssize='ls -hlFS'              # Full list with file size
 alias ..='cd ../'                    # Go back 1 directory level
 alias ~="cd ~"                       # Go Home
 alias c='clear'                      # Clear terminal display
