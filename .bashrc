@@ -15,7 +15,7 @@ export EDITOR=/usr/local/bin/atom
 # LS settings
 alias ls='/bin/ls -p';
 
-# Aliases
+# File system
 alias lsdot='ls -a | grep "^\."'     # List only hidden files or directory
 alias lsdir='ls -p | grep "/$"'      # Only list directories name
 alias lsfile='ls -1 | grep -v "/$"'  # Only list files name
@@ -27,3 +27,4 @@ alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
 
 # Network
 alias myip='curl ip.appspot.com; echo'
+alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
