@@ -23,13 +23,8 @@ alias lssize='ls -hlFS'              # Full list with file size
 alias ..='cd ../'                    # Go back 1 directory level
 alias ~="cd ~"                       # Go Home
 alias c='clear'                      # Clear terminal display
-alias sshserver='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
+alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
 
 # Network
 alias myip='curl ip.appspot.com; echo'
 alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
-
-# virtual environment for python dev
-export WORKON_HOME=$HOME/.virtualenvs
-alias cdvenv='cd $VIRTUAL_ENV'
-. virtualenvwrapper.sh
