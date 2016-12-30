@@ -28,3 +28,8 @@ alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
 # Network
 alias myip='curl ip.appspot.com; echo'
 alias sshsite5='ssh -i ~/.ssh/YOUR_PRIVATE_KEY user@hostname' #ssh to server
+
+# if using virtual environments for python dev
+export WORKON_HOME=$HOME/.virtualenvs
+alias cdenv='cd $VIRTUAL_ENV'
+. virtualenvwrapper.sh
