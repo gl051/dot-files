@@ -18,7 +18,11 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[log]
+	date = relative
+[format]
+	pretty = format:%h %Cblue%ad%Creset %ae %Cgreen%s%Creset
 [alias]
 	undo = reset --soft HEAD^ 		# undo a commit
 	last = log -1 HEAD
-	lol = log --oneline --graph
+	logfile = log --follow    # log one file provided as parameter
